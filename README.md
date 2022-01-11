@@ -34,3 +34,12 @@ a place to cold some processing sketches I made while in the office
  Hence, you have to divide your result by 2.
  This leaves you with n(n−1)/2.
  
+ 
+ ## polarDrift 
+ 
+ is a modular mult. line art with simple polar coordinates.
+ You can click around to get differnt multiples and points on the circle
+ if theta gets high it starts to get out of phase and drift
+ see some images at my instagram
+ 
+ c
