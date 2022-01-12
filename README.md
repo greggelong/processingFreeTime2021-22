@@ -3,6 +3,8 @@ a place to cold some processing sketches I made while in the office
 
 ## ravenWordsp uses the ttslib https://www.local-guru.net/blog/pages/ttslib
 
+ravenWordsp does not work in processing 4, because of the library, but i will work with processing 3
+
 ## ravenWord dosen't have tts
 
 ## sol LeWitt and wall draw
