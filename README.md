@@ -44,4 +44,6 @@ ravenWordsp does not work in processing 4, because of the library, but i will wo
  if theta gets high it starts to get out of phase and drift
  see some images at my instagram
  
- c
+ ## Digital Harmony sketches are playing with sine waves to look like Whitney's digital harmony
+ the waves are drawn with no loops, one loop and two loops and either scroll or not
+ 
