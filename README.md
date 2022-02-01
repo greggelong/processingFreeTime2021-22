@@ -73,4 +73,22 @@ I have uploaded all  of these versons.  I have not improved the earlier versions
 
 but I will make a seperate repo for sand piles and make a p5 version to use on the web
 
- 
+## chaos carpet
+
+here is a Sierpiński carpet made with points from a simple chaos game.  I originally coded this on my phone in the office. I had forgotten about it and was reminded when I saw this great video by Mr. Sparks 
+The Chaos Game - Geogebra Build - as seen on Numberphile
+
+https://youtu.be/IKhahq9EwPw
+
+He is using geogebra but his explanation of the Hausdorff dimension is great in the third part of the video
+
+the carpet is:
+
+- 3 times bigger in length
+- 8 copies
+- so 3 to what power is 8
+-  3**x = 8
+- fd = log(8)/log(3)
+- The Hausdorff dimension is log(8)/log(3) == 1.892
+
+
