@@ -97,3 +97,8 @@ https://www.instagram.com/p/CZcKHE8oJKi/
 
 Pulling a two dimensional square into the third dimension as Sierpinski Tetrahedron, using the chaos game in processing P3D.  3D is fast, each frame I am plotting over 10,000 points half way to one of four original points. if it is only plotted in 2d this would create a solid square. but by putting one point into the third dimension it produces an object that has a Hausdorff dimension of 2 in 3d space. using PVector and built in lerp function. #math #creativecode #processing #p5js #chaos #fractal
 
+
+## Menger sponge
+
+Some more 3d chaos game.  This time the Menger sponge. The 20 points are put into an array as vectors.  One of the points is randomly picked. Then the plotting vector is calculated as 2/3 the way to that point using the PVector lerp() function. The color is mapped to the index of the points in HSB mode. creates a complex image with just a little bit of code.   #math #creativecode #processing #p5js #chaos #fractal #creativecoding 
+
