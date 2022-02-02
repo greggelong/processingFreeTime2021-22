@@ -100,5 +100,7 @@ Pulling a two dimensional square into the third dimension as Sierpinski Tetrahed
 
 ## Menger sponge
 
+https://www.instagram.com/p/CZejeDkoLN2/
+
 Some more 3d chaos game.  This time the Menger sponge. The 20 points are put into an array as vectors.  One of the points is randomly picked. Then the plotting vector is calculated as 2/3 the way to that point using the PVector lerp() function. The color is mapped to the index of the points in HSB mode. creates a complex image with just a little bit of code.   #math #creativecode #processing #p5js #chaos #fractal #creativecoding 
 
