@@ -104,3 +104,27 @@ https://www.instagram.com/p/CZejeDkoLN2/
 
 Some more 3d chaos game.  This time the Menger sponge. The 20 points are put into an array as vectors.  One of the points is randomly picked. Then the plotting vector is calculated as 2/3 the way to that point using the PVector lerp() function. The color is mapped to the index of the points in HSB mode. creates a complex image with just a little bit of code.   #math #creativecode #processing #p5js #chaos #fractal #creativecoding 
 
+so what is the Hausdorff dimension of the Menger sponge.  Let's look at how it is created by scaling. The length scales by 3.  
+
+regular cube
+
+- so let's look first at  scaling a regular cube by three 
+- if we scale by three there will be 27 copies 
+- so we can get the dimension d by  (scale factor: 3) raised to what (power d) = (copies: 27)
+- 3^d = 27  
+- d= 3 : 3^3 = 27
+- the dimension is 3.  It is 3 dimensional. 
+
+Menger Sponge
+
+- The Menger Sponge is also scaled by 3
+- but the Menger Sponge has only 20 copies (in the code they are the original 20 vectors, the other 7 are  its distinctive holes)
+- so dimension is d  is (scale factor:3) raised to what (power d) = (copies: 20)
+- 3^d =20
+- we know d is less than 3, and greater than 2, 3^3=27, 3^2 = 9
+- we can get the dimension using logs
+- log(3^d) = log(20) 
+- d*log(3) = log(20) (we can move the exponent out using the power rule of logs )
+- d = log(20)/log(3) 
+- d = 2.72683 
+- this is a fractional dimensions (where the name fractal originates)
