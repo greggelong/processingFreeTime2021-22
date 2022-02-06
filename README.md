@@ -128,3 +128,19 @@ Menger Sponge
 - d = log(20)/log(3) 
 - d = 2.72683 
 - this is a fractional dimensions (where the name fractal originates)
+
+
+
+
+-------
+## ulamCA
+
+reading The Recursive Universe 1985 by William Poundstone and making a version of Ulum's coral reefs
+
+as described in chapter 8 of the book
+
+such a great book!!
+
+These are the first attemts at the Ulam type CA and the rules are simple but depend but dynamically
+
+take into acount generation.  so keeping flavor of the one originally described.
