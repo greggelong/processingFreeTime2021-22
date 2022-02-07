@@ -135,12 +135,9 @@ Menger Sponge
 -------
 ## ulamCA
 
-reading The Recursive Universe 1985 by William Poundstone and making a version of Ulum's coral reefs
+https://www.instagram.com/p/CZrmjMQo2ov/
+ 
+ Reading "The Recursive Universe" from 1985 by William Poundstone and making a variation of Ulam's coral reefs as described in chapter 8.
+This Ulam type CA applies just a single rule while checking the north, south, east, and west neighbors, also called the von Neumann neighborhood. But it also takes into account the generation the cell was born. If the sum of the neighbors divided by the generation = 1 then then that cell is comes alive or redrawn with a color matching its generation. So even older parts of growing coral get recolored or filled in with different colors creating nice variation.
 
-as described in chapter 8 of the book
-
-such a great book!!
-
-These are the first attemts at the Ulam type CA and the rules are simple but depend but dynamically
-
-take into acount generation.  so keeping flavor of the one originally described.
+The book is a great exploration of cellular automata and how these models can help explain life and the universe.
