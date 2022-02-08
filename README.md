@@ -141,3 +141,7 @@ https://www.instagram.com/p/CZrmjMQo2ov/
 This Ulam type CA applies just a single rule while checking the north, south, east, and west neighbors, also called the von Neumann neighborhood. But it also takes into account the generation the cell was born. If the sum of the neighbors divided by the generation = 1 then then that cell is comes alive or redrawn with a color matching its generation. So even older parts of growing coral get recolored or filled in with different colors creating nice variation.
 
 The book is a great exploration of cellular automata and how these models can help explain life and the universe.
+
+added a version on a torus: it it is more symmetrical over 1000 generations
+
+
