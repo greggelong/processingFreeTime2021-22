@@ -145,3 +145,13 @@ The book is a great exploration of cellular automata and how these models can he
 added a version on a torus: it it is more symmetrical over 1000 generations
 
 
+-----
+
+## eulerSprialTurtle
+
+Euler spirals inspired by NumberPhile  https://youtu.be/kMBj2fp52tA
+ the turtles name is greg he is a pvector that is updated in
+a forward function using polar coordinates and a right turn function
+ he has a heading angle intheta
+he can be sent a plot theta in the right();  angles are in degrees
+converted to radians in the forward() and right() functions
