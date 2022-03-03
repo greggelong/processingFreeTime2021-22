@@ -1,14 +1,17 @@
-// pixel array is so much faster
+ // pixel array is so much faster
+ // I hope the comments help me remember the neet way to change colors
 int iter;
-float maxx,minx;
+float maxx, minx;
 float maxy, miny;
 float zoom = 0.1;
-int BOC = 64; // hsb color and max count to infinty
-int BM = 64; // color modulo
+// color 100 will be set to black so the biggest iter value possible  is 99
+int clrMod = 64;
+// but it looks wild with smaller number like 20 or 8
+// 50 is a nice comprimise
 void setup() {
-  size(1028, 1028);  
+  size(1028, 1028);
   //fullScreen();
-  colorMode(HSB, BOC);
+  colorMode(HSB, clrMod);
   maxx =2;
   minx=-2;
   maxy=2;
@@ -23,45 +26,41 @@ void draw() {
   //noLoop();
 }
 
-void mousePressed(){
-   float x = map(mouseX, 0, width, minx, maxx);  // set the x on complex plane
-   float y = map(mouseY, 0, height, miny, maxy); // s
-   // center and zoom those coordinates
-   maxx = x+zoom;
-   minx = x-zoom;
-   maxy = y+zoom;
-   miny = y-zoom;
-   
-   zoom*=0.5;
-   if (zoom<0.00001){
-     zoom=1;
-     maxx =2;
-  minx=-2;
-  maxy=2;
-  miny=-2;
-   }
- 
-}
+void mousePressed() {
+  float x = map(mouseX, 0, width, minx, maxx);  // set the x on complex plane
+  float y = map(mouseY, 0, height, miny, maxy); // s
+  // center and zoom those coordinates
+  maxx = x+zoom;
+  minx = x-zoom;
+  maxy = y+zoom;
+  miny = y-zoom;
 
-void mouseDragged() 
-{
-  BM+= 1;
-  if (BM > 64) {
-    BM = 1;
+  zoom*=0.5;
+  if (zoom<0.00001) {
+    zoom=1;
+    maxx =2;
+    minx=-2;
+    maxy=2;
+    miny=-2;
   }
 }
 
-void keyPressed(){
- if( key == 'c'){
-   
-  maxx =2;
-  minx=-2;
-  maxy=2;
-  miny=-2;
-   
- }
- 
- 
+void mouseDragged() {
+  // changes the colorMod which effects how many colors out of total are used
+
+  clrMod+= 1;
+  // if you want to change the absolute number of colors you chan then
+  // set
+  //colorMode(HSB,clrMod); //and then it will just use absolute number
+
+  if (clrMod > 64) {
+    clrMod = 1;
+  }
+}
+
+void keyPressed() {
+  if ( key == 'h') {
+  }
 }
 
 void showmandel() {
@@ -85,18 +84,20 @@ void showmandel() {
         a = aa +ca;
         b = bb +cb;
 
-        if (abs(a+b)>BOC) {
-         // println("I broke out");
+        if (abs(a+b)>16) {
+          // I cound break out at 2 as it is proved for the mandelbrot any
+          // orbit greater than 2 goes to infinity
+          // but it lools better when the points have bigger iter numbers
+          // which affects the color
           break;
-          
         }
         iter++;
       }
       //println(iter);
       if (iter == 100) {
-        pixels[x+y*width] =color(0,0,1);
+        pixels[x+y*width] =color(0, 0, 0);
       } else {
-        pixels[x+y*width] = color(iter%BM,100,100);
+        pixels[x+y*width] = color(iter%clrMod, 100, 100);
       }
     }
   }
