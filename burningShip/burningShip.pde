@@ -8,7 +8,7 @@ float maxx, minx;
 float maxy, miny;
 float zoom = 0.1;
 boolean bw = false; // togle black and white with b
-int clrMod = 64; // color modulo
+float clrMod = 64; // color modulo
 int MN =3;  // set pos and neg min max -3 to 3 can change when zooming
 void setup() {
   size(1028, 1028);
@@ -49,7 +49,7 @@ void mousePressed() {
 
 void mouseDragged(){
   // changes the number of hues used out of the total number of hues
-  clrMod+= 1;
+  clrMod+= 0.1;
   // use this if you want to limit the absolute  number of hues
   //colorMode(HSB,clrMod);
   if (clrMod > 64) {
