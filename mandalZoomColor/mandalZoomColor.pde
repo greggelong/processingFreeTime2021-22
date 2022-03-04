@@ -5,7 +5,7 @@ float maxx, minx;
 float maxy, miny;
 float zoom = 0.1;
 // color 100 will be set to black so the biggest iter value possible  is 99
-int clrMod = 64;
+float clrMod = 64;
 // but it looks wild with smaller number like 20 or 8
 // 50 is a nice comprimise
 void setup() {
@@ -48,7 +48,7 @@ void mousePressed() {
 void mouseDragged() {
   // changes the colorMod which effects how many colors out of total are used
 
-  clrMod+= 1;
+  clrMod+= 0.1;
   // if you want to change the absolute number of colors you chan then
   // set
   //colorMode(HSB,clrMod); //and then it will just use absolute number
