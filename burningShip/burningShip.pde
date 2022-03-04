@@ -1,7 +1,8 @@
- // pixel array is so much faster
+  // pixel array is so much faster
 // a complex iterated function fractal
 //  http://www.paulbourke.net/fractals/burnship/
 // added photo press s and togel black and white b
+// flipped the plot to be just like mandel with abs()
 int iter;
 float maxx, minx;
 float maxy, miny;
@@ -94,10 +95,10 @@ void showmandel() {
         // x^2 -y^2 -c
         // 2 abs(x*y)-c
         float aa = (a*a)-(b*b);
-        float bb = -2.0 *abs(a*b);  // negative to flip this
+        float bb = 2.0 *abs(a*b);   
 
-        a = aa -ca;//+map(mouseX,0,width,-2,2);// ca;
-        b = bb -cb;// +map(mouseY,0,height,-2,2);// cb;
+        a = aa +ca;//+map(mouseX,0,width,-2,2);// ca;
+        b = bb +cb;// +map(mouseY,0,height,-2,2);// cb;
 
         if (abs(a+b)>16) {
           // set the break out point at orbit greater than 16
