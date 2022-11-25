@@ -155,3 +155,12 @@ a forward function using polar coordinates and a right turn function
  he has a heading angle intheta
 he can be sent a plot theta in the right();  angles are in degrees
 converted to radians in the forward() and right() functions
+
+
+## polar poly
+
+a very simple function to create n polygon using polar to cartesian coordinates
+
+just remember that you must convet and int to a float if you are doing division
+
+
