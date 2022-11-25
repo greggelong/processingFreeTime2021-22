@@ -163,4 +163,19 @@ a very simple function to create n polygon using polar to cartesian coordinates
 
 just remember that you must convet and int to a float if you are doing division
 
+```processing
+void drawpoly(int n) {
+
+  for (int i =0; i<n; i++) {  // 1/n gets a number less than zero that when multipled by TWO_PI gets the angel in radians
+    float angle = i/float(n) - 0.25; //need to convert to a float
+    //println(angle);//  the - 0.25 makes the image straight
+    float vx = radius * cos(angle *TWO_PI);
+    float vy = radius * sin(angle*TWO_PI);
+    float v1x= radius * cos((angle+1/float(n))*TWO_PI);
+    float v1y= radius * sin((angle+1/float(n))*TWO_PI);
+    line(vx, vy, v1x, v1y);
+  }
+}
+```
+
 
