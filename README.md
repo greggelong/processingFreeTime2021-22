@@ -178,4 +178,9 @@ void drawpoly(int n) {
 }
 ```
 
+## polar poly 2 
+
+the same simple function with lerp lines from the center
+
+
 
